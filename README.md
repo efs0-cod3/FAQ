@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/efs0-cod3/FAQ)
+- Live Site URL: [live site](https://efs0-cod3.github.io/FAQ/)
 
 ## My process
 
