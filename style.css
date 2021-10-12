@@ -1,0 +1,206 @@
+/*# Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+## Colors
+### Primary
+#### Text
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+### Neutral
+#### Text
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+#### Dividers
+- Light grayish blue: hsl(240, 5%, 91%)*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%) 100%) no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+@media screen and (max-width:799px) {
+  main{
+    width: 375px;
+   
+  }
+
+.card {
+  background-color: white;
+    border-radius: 20px;
+    width: 327px;
+    height: 65vh;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+
+.il-box {
+  visibility: hidden;
+  height: 0;
+}
+.card-image{
+  height: 0;
+}
+
+.il-box-mobile{
+  position: absolute;
+    top: 58px;
+    left: 35px;
+}
+
+h1{
+  text-align: center;
+  font-size: 30px;
+  color: hsl(238, 29%, 16%);;
+}
+
+.card-info {
+  margin: 100px auto;
+}
+.texts {
+  width: 280px;
+  margin: auto;
+  font-size: 14.5px;
+}
+}
+@media screen and (min-width: 800px) {
+  
+.container {
+  display: flex;
+  width: 100vw;
+}
+
+.card {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  width: 920px;
+  height: 510px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 450px;
+  background-image: url(images/illustration-woman-online-desktop.svg), url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: -82px 62px, -574px -300px;
+}
+
+.il-box {
+  position: absolute;
+  right: 821.1px;
+  bottom: 220px;
+  z-index: 1;
+}
+.il-box-mobile{
+  visibility: hidden;
+  height: 0;
+}
+
+
+.card-info {
+  margin: 20px auto 20px;
+  display: flex;
+  align-items: center;
+}
+
+.texts {
+  width: 350px;
+  font-size: 16px;
+}
+
+h1 {
+  color: hsl(238, 29%, 16%);
+  font-size: 30px;
+}
+}
+
+/*label*/
+.collapsible {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.collapsible input {
+  position: absolute;
+  left: -9999px;
+}
+
+.collapsible input:focus~.collapser {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+.collapsible .collapser:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.collapsible .arrow {
+  float: right;
+  margin-left: 0.5em;
+  transition: transform .25s ease-out;
+}
+
+.collapsible input:checked~.arrow,
+.collapsible input:checked~.collapser .arrow {
+  transform: rotate(180deg);
+}
+
+.collapsible .collapsed {
+  font-size: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  transition: opacity .25s, margin .5s 0.25s, font-size .5s 0.25s, padding .5s .25s;
+}
+
+.collapsible input:checked~.collapsed {
+  font-size: 16px;
+  opacity: 1;
+  height: auto;
+  padding: 5px 0;
+  transition: margin .25s, padding .25s, font-size .25s, opacity .5s .25s;
+}
+.collapser {
+  color: hsl(237, 12%, 33%);
+}
+.collapsed {
+  color: hsl(240, 6%, 50%);
+  font-size: 12px;
+}
+hr {
+  color: hsl(240, 5%, 91%);
+}
+/*label*/
+
+.attribution {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: hsl(237, 12%, 33%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
