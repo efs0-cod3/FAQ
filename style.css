@@ -61,7 +61,7 @@ h1{
 .texts {
   width: 280px;
   margin: auto;
-  font-size: 14.5px;
+  font-size: 12px;
 }
 }
 @media screen and (min-width: 800px) {
